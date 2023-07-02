@@ -3,14 +3,14 @@ import './ExpenseItem.css'
 import Expensedate from './ExpenseDate';
 import Card from '../UI/Card';
 
-function ExpenseItem(props){
+const ExpenseItem = (props) =>{
     
     return (
         <Card className='expense-item'>
             <Expensedate date={props.date}/>
             <div className='expense-description'>
-                <h2>{props.title}</h2>
-                <div className='expense-price'>${props.price}</div>
+                <h2>{ props.title }</h2>
+                <div className='expense-price'>${props.amount}</div>
             </div>
         </Card>
     );
