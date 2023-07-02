@@ -1,4 +1,5 @@
-import Expenses from "./components/Expenses";
+import React from "react";
+import Expenses from "./components/Expenses/Expenses";
 
 function App(){
     let expenses = [
@@ -31,7 +32,7 @@ function App(){
     return(
         <div>
             <h2>Expenses</h2>
-            <Expenses irem={expenses}/>
+            <Expenses item={expenses}/>
         </div>
     );
 }
